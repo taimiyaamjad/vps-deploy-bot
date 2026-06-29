@@ -34,6 +34,8 @@
 
 ## 📁 File Structure
 
+```
+
 ├── config.py          ← ALL settings (edit this first!)
 ├── bot.py             ← Main Discord bot + commands
 ├── database.py        ← SQLite database layer
@@ -47,7 +49,7 @@
 ├── zenvps.log         ← Runtime log (created automatically)
 └── venv/              ← Python virtual environment
 
----
+```
 
 ## 🚀 Quick Start
 
@@ -65,11 +67,15 @@ Upload all files (except venv/, zenvps.db, zenvps.log) to your VPS.
 
 Edit config.py and set at minimum:
 
+```
+
 BOT_TOKEN         = "your_actual_bot_token"
 ADMIN_DISCORD_IDS = [your_discord_id]        # YOUR numeric Discord user ID
 VPS_HOST_IP       = "your.server.public.ip"  # For SSH display
 DASHBOARD_PASSWORD = "a_strong_password"     # Dashboard login
 DASHBOARD_SECRET_KEY = "random_string_here"  # Flask session secret
+
+```
 
 ### 4. Run
 
